@@ -1,13 +1,10 @@
-import formulas.cinematica;
-import formulas.movimentoCircular;
-import formulas.movimentoUniforme;
-import formulas.movimentoUniformementeVariado;
-
-import javax.swing.*;
-import java.awt.*;
-
+import formulas.cinematica.movimentoCircular;
+import formulas.cinematica.movimentoUniforme;
+import formulas.cinematica.movimentoUniformementeVariado;
+import Interfaces.cinematica.InterfaceMovimentoUniforme;
 public class Main {
     public static void main(String[] args) {
+        new InterfaceMovimentoUniforme();
         // Funcoes de cinematica
         // Calcula a funcao horaria do deslocamento uniforme:
         // movimentoUniforme.calculaFuncaoHoraraDoDeslocamento();
@@ -18,7 +15,6 @@ public class Main {
         // movimentoUniformementeVariado.calculaFuncaoHorariaVelocidade();
         // Calcula funcao horaria da posicao : movimentoUniformementeVariado.calculaFuncaoHorariaPosicao();
         // movimentoUniformementeVariado.calculaFormulaTorricelli();
-
 
         // Funcoes movimento circular
         // movimentoCircular.calculaPosicaoAngular();
