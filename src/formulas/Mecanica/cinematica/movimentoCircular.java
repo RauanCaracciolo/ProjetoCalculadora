@@ -1,6 +1,4 @@
-package formulas.cinematica;
-
-import java.util.Scanner;
+package formulas.Mecanica.cinematica;
 
 public class movimentoCircular extends cinematica{
     private double raio;
@@ -11,23 +9,23 @@ public class movimentoCircular extends cinematica{
     private double aceleracaoCentripeta;
 
 
-    private double formulaPosicaoAngular(){
+    public double formulaPosicaoAngular(){
         deslocamentoAngular = xFinal/raio;
         return deslocamentoAngular;
     }
-    private double formulaDeslocamentoAngular(){
+    public double formulaDeslocamentoAngular(){
         deslocamentoAngular = (xFinal - xInicial)/raio;
         return deslocamentoAngular;
     }
-    private double formulaVelocidadeAngularMedia(){
+    public double formulaVelocidadeAngularMedia(){
         velocidadeAngular = deslocamentoAngular/ (tFinal-tInicial);
         return velocidadeAngular;
     }
-    private double formulaAceleracaoCentripeta(){
+    public double formulaAceleracaoCentripeta(){
         aceleracaoCentripeta = (velocidade * velocidade) /raio;
         return aceleracaoCentripeta;
     }
-    private double formulaAceleracaoAngularMedia(){
+    public double formulaAceleracaoAngularMedia(){
         aceleracaoAngular = velocidadeAngular / (tFinal - tInicial);
         return aceleracaoAngular;
     }

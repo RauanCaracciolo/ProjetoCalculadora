@@ -1,4 +1,4 @@
-package formulas.cinematica;
+package formulas.Mecanica.cinematica;
 
 public class cinematica {
     double velocidade;

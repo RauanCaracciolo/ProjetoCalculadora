@@ -1,6 +1,4 @@
-package formulas.cinematica;
-
-import java.util.Scanner;
+package formulas.Mecanica.cinematica;
 
 public class movimentoUniformementeVariado extends cinematica{
     double aceleracao;
