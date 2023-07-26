@@ -38,7 +38,6 @@ public class interfaceInicial extends JFrame implements ActionListener {
     private void selecao(ActionEvent actionEvent) {
         switch (selecaoGeral.getSelectedIndex()){
             case 0:
-                new interfaceInicial();
                 break;
             case 1:
                 selecaoCinematica = new JComboBox<>();
@@ -50,7 +49,7 @@ public class interfaceInicial extends JFrame implements ActionListener {
                 add(selecaoCinematica);
                 break;
             case 2:
-                new InterfaceMovimentoUnifromementeVariado();
+                JOptionPane.showMessageDialog(null,"AINDA EM DESENVOLVIMENTO");
                 break;
         }
     }
